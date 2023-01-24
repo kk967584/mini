@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+/*checkBox.css*/
+ul{list-style : none;}
+
+* { margin: 0 auto; padding:0;}
+
+#headerMenu{
+	height:112px;
+	width:1300px;
+	background-color:black;
+	text-align:left;
+	position:relative;
+}
+
+#titleimg {
+	
+	margin-left:1%;
+	
+	
+}
+#mainMenuBox {
+	width:1300px;
+	height:35px;
+	line-height:35px; 
+	background-color:#ffffff;
+	z-index:20;
+	border-top:solid #cccccc 1px;
+	border-bottom:solid #cccccc 1px;	
+}
+
+#mainMenuBox ul {
+	margin:0 auto;
+}
+
+#mainMenuBox ul li{
+	float:left; 
+	text-align:center;
+	width:16%;  
+	height:30px;
+	line-height:30px;
+}
+
+#mainMenuBox ul li a{
+	text-decoration:none;
+	color:black;
+	font-size:15px;
+	font-weight:bold;
+}
+
+#mainMenuBox ul li a:hover{	
+	color:red;	
+}
+
+
+button{ cursor: pointer; }
+
+body{ background-color: #fff }
+
+.usebox{
+	width: 780px; height: 550px;
+	margin: 0 auto;
+}
+.usebox h1{
+	width: 100%;
+	height: 150px; line-height:100px;
+	margin-top:40px;
+	margin-bottom:-40px;
+	text-align: center; font-size: 40px;
+	font-weight: normal;
+}
+
+
+.usebox form{
+	width: 100%;
+	height: 450px;
+	background-color: rgb(32, 32, 32);
+	padding: 60px;
+	box-sizing: border-box;
+}
+.usebox fieldset{
+	border: none;
+}
+
+.usebox legend{
+	position: absolute; 
+	left: -999em;
+}
+.usebox label{
+    font-size: 20px; color: #fff;
+    margin-bottom: 10px; 
+    margin-left:20px;
+    line-height:50px;
+}
+
+.check-menu-box checkbox1{
+	font-weight:bold;
+}
+
+.usebox button{
+    display: block;
+    width: 240px; height: 50px;
+    margin: 60px auto; 
+    border: none;
+    background-color: rgb(255, 255, 128);
+    color: black; font-size: 14px; font-weight: bold;
+    float:left;
+    margin-left:60px;
+}
+
+.usebox check-container{
+	display:block;
+	margin: 0 auto;
+	padding:10px;
+	height: 40px;
+	border: none;
+}
+
+/***********  BOTTOM MENU *****************/
+#footerBox{
+	margin-top:40%;
+	margin-bottom:100px;
+	background-color:black;
+	width:1300px;
+	margin-left:-260px;
+}
+#bottomMenuBox {
+	height:30px;
+	line-height:30px;
+	width:1200px;
+	padding:15px;
+
+}
+
+#bottomMenuBox ul li {
+	display:inline-block;
+	text-align:center;
+	padding:5px;
+	margin-left:90px;
+}
+
+
+#bottomMenuBox ul li a{
+	color:white;
+	font-weight:bold;
+	text-decoration:none;
+	
+}
+
+#bottomimg {
+	padding:0px;
+	margin-bottom:10px;
+	margin-top:0px;
+	margin-left:25%;
+}

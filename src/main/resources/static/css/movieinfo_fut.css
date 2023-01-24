@@ -1,0 +1,275 @@
+@charset "UTF-8";
+
+/********************무비 인포 헤더 *************************  */
+ul{list-style : none;}
+
+* { margin: 0 auto; }
+
+#wrap {
+	width:1300px;
+	background-color:#181818; 
+	text-align:left;
+	position:relative;
+}
+
+#titleimg {
+	height:112px;
+	width:1300px;
+	background-color:black;
+}
+#titleimg img{
+	margin-left:40%;
+}
+#mainMenuBox {
+	width:1300px;
+	height:35px;
+	line-height:35px; 
+	background-color:#ffffff;
+	z-index:20;
+	border-top:solid #cccccc 1px;
+	border-bottom:solid #cccccc 1px;	
+}
+
+#mainMenuBox ul {
+	margin:0;
+}
+
+#mainMenuBox ul li{
+	float:left; 
+	text-align:center;
+	width:16%;  
+	height:30px;
+	line-height:30px;
+}
+
+#mainMenuBox ul li a{
+	text-decoration:none;
+	color:black;
+	font-size:15px;
+	font-weight:bold;
+}
+
+#mainMenuBox ul li a:hover{	
+	color:red;	
+}
+
+/********************무비 인포 헤더끝 *************************  */
+
+		#tit-moviechart{
+
+		width:1100px;
+		height:60px;
+		padding-top:30px; 							/* 상단에 메뉴바 들어오면 무비차트와 공백나눔 */
+		padding-left:30px;
+		border-bottom: 3px solid #030303;
+		}
+
+		.current{
+		position :absolute;
+		top:40px;
+		right:5%;
+		color:#e80911;
+		font-weight:bold;
+		margin-right:40px;
+		}
+		
+		.current li{
+		display:inline-block;		
+		width:200px;
+		height:30px;
+		text-align:center;
+		}
+		.currentmovie{	
+		border:1px solid black;
+		border-width:0 0 1px 0;
+		}
+		.fut-movie{
+		margin : 0 -6px;		
+		border:1px solid black;
+		border-width:1px 1px 0 1px;
+		}
+		.current a{
+		color:black;		
+		}
+		.current li a:hover{
+		color:#e80911;
+		}
+		.li-container {
+		padding-top:25px;
+		}
+		.li-container li{
+		display:inline-block;					
+		}
+
+		/* 랭크 CSS . . . */
+		.rank {												
+		display:block;
+		margin-bottom:4px;
+		text-align:center;
+		line-height:28px;
+		width:260px;
+		background-color:#f2e70c;
+		font-weight:bold;
+		padding-left:0;
+		}
+
+		.box-image img{
+		width:260px;									
+		height:260px;								
+		padding-left:0px;
+		}
+
+	.movie-resrvation{
+	/* background-color:#f52249; */
+	/* color:#f5faf6; */
+	background-color:#f2e70c;
+	color:black;
+	font-weight:bold;
+	float:right;
+	margin-right:10px;
+	margin-top:5px;
+	padding-top:5px;
+	width:80px;
+	height:30px;
+	border-radius: 50%;
+	}
+		
+		a{
+			text-align:center;
+			text-decoration:none;
+		}
+		.box-info{
+		width:220px;
+		}
+		.box-reserve{
+		padding-top:10px;
+		}
+		
+		/*  영화명 */
+		.tit-text{
+		padding-top:10px;
+		max-height:20px;
+		text-align:center;
+		width:220px;
+		font-size:16px;
+		text-overflow:ellipsis;
+		overflow:hidden;
+		white-space:nowrap;
+		font-weight:bold;
+		}
+		.rv_percent {
+		float:left;
+		width:150px;}
+		.rv_percent p{
+		float:left;
+		width:150px;
+		font-size:13px;
+		margin-left:20px;
+		}
+		/* 	movieinfo.css 끝 			*/
+		/*  movieinfo_fut.css 시작	*/
+.tit_future{
+	padding-top:1%;
+	padding-left:40px;
+}
+.btn-heart{
+	  width:150px;
+	  float:left;
+}
+.button-btn{
+	width:75px;
+	height:45px;
+	margin-top:20px;
+    display: inline-block;
+    margin: 0;
+    text-align: center;
+    line-height: 34px;
+    color: #503396;
+    font-weight: 400;
+    border-radius: 4px;
+    text-decoration: none;
+    border: 1px solid #503396;
+    vertical-align: middle;
+    background-color: white;
+    cursor: pointer;
+}
+
+.heart{
+	width:15px;
+	height:15px;
+}
+#moreMv{
+	text-align:center;
+	margin-top:50px;
+	border-style:solid;
+	border-width:thin;
+	width:100px;
+	cursor:pointer;
+}
+.tit_future2{
+	padding-left:120px;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+.li-container2{
+	margin:0 auto;
+	width: 1130px;
+    display:inline-block;
+    padding-inline-start: 125px;
+}
+.li-container2 li{
+	list-style:none;
+	display:inline-block;
+
+}
+.box-image2{
+	width:260px;
+}
+.box-image2 img {
+    width: 260px;
+    height: 260px;
+    padding-left: 0px;
+}
+.rank2 {
+     display: block;
+    margin-bottom: 4px;
+    text-align: center;
+    line-height: 28px;
+    width: 260px;
+    background-color: #f2e70c;
+    font-weight: bold;
+    padding-left: 0;
+}
+/**********************FOOTER CSS**********************/
+#footerBox{
+	margin-top:40px;
+	background-color:black;
+}
+
+#bottomMenuBox {
+
+	height:30px;
+	line-height:30px;
+
+}
+
+#bottomMenuBox ul li {
+	display:inline-block;
+	text-align:center;
+	padding:5px;
+	margin-left:90px;
+}
+
+
+#bottomMenuBox ul li a{
+	color:white;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+#bottomimg {
+	padding:15px;
+	margin:20px;
+	margin-left:100px;
+
+}

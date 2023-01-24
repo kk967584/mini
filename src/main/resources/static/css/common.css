@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+* { margin: 0 auto; }
+
+/* 모든 콘텐츠를 포함 warp box */
+
+#wrap {
+	width:1280px;
+	background-color:#d8d8d8; 
+	text-align:left;
+	position:relative;
+}
+
+/* footerBox */
+
+.upload { 
+	width: 80px;
+	height: 35px;
+	/* 동그랗게 만들기 */
+	float:right;
+	margin-right:45px;
+}
+
+#footerBox {
+	padding:5px;
+	padding-top:8px;
+	background-color:black;
+}
+
+#memoBox {
+	margin-left:5%;
+}
+
+ul{list-style : none;}
+
+* { margin: 0 auto; }
+
+#wrap {
+	width:1300px;
+	text-align:left;
+	position:relative;
+}
+
+#titleimg {
+	height:112px;
+	width:1300px;
+	background-color:black;
+}
+#titleimg img{
+	margin-left:40%;
+}
+#mainMenuBox {
+	width:1300px;
+	height:35px;
+	line-height:35px; 
+	background-color:#ffffff;
+	z-index:20;
+	border-top:solid #cccccc 1px;
+	border-bottom:solid #cccccc 1px;	
+}
+
+#mainMenuBox ul {
+	margin:0;
+}
+
+#mainMenuBox ul li{
+	float:left; 
+	text-align:center;
+	width:16%;  
+	height:30px;
+	line-height:30px;
+}
+
+#mainMenuBox ul li a{
+	text-decoration:none;
+	color:black;
+	font-size:15px;
+	font-weight:bold;
+}
+
+#mainMenuBox ul li a:hover{	
+	color:red;	
+}

@@ -1,0 +1,265 @@
+	ul{list-style : none;}
+
+* { margin: 0 auto; padding:0; }
+#headerMenu{
+	height:112px;
+	width:1300px;
+	background-color:black;
+	text-align:left;
+	position:relative;
+}
+
+#titleimg {
+	
+	margin-left:40%;
+	
+	
+}
+	#mainMenuBox {
+	
+	width:1300px;
+	height:35px;
+	line-height:35px; 
+	z-index:20;
+	border-top:solid #cccccc 1px;
+	border-bottom:solid #cccccc 1px;	
+}
+
+#mainMenuBox ul {
+	margin:10px auto;
+}
+
+#mainMenuBox ul li{
+	margin-top:3px;
+	float:left; 
+	text-align:center;
+	width:16%;  
+	height:30px;
+	line-height:10px;
+}
+
+#mainMenuBox ul li a{
+	text-decoration:none;
+	color:black;
+	font-size:17px;
+	font-weight:bold;
+}
+
+#mainMenuBox ul li a:hover{	
+	color:red;	
+}
+
+
+h1{
+	margin-top:25px;
+	padding:20px;
+}
+	
+	body{ background-color: #fff }
+    div.create{
+    width: 800px;
+    text-align: center;
+    padding: 40px;
+    border-bottom: 1px solid black;
+    margin: auto;
+    }
+ 
+    table{
+    
+    height: 500px;
+    width: 1100px;
+    border-top: none;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #ededed;
+    border-radius:7px;
+    }
+    tr{
+    	font-size:17px;
+    }
+    label{
+    font-size:17px;}
+    
+ 
+    td{
+    border-bottom: 1px dotted black;
+    font-size: 17px; color: #333;
+    border-radius:7px;
+    }
+    
+    input{
+     padding:5px;font-size:17px;
+     margin-top:3px;
+     margin-bottom:3px;
+    }
+    
+    select{
+     padding:5px; font-size:17px;
+    }
+ 
+    caption{
+    text-align: left;
+    }
+ 
+    .col1 {
+    background-color:black;
+    padding: 20px;
+    text-align: right;
+    font-weight: bold;
+    font-size:17px;
+    color:white;
+    }
+ 
+    .col2 {
+    text-align: left;
+    padding: 5px;
+    font-size:17px;
+    }
+ 
+    .but1 {
+    height: 40px;
+    width: 80px;
+    color: black;
+    background-color: rgb(255, 255, 128);
+    border: none;
+    border-radius:5px;
+    }
+ 
+    .but2 {
+    border-radius:5px;
+    margin-left:5px;
+    height: 40px;
+    width: 80px;
+    color: black;
+    background-color: rgb(255, 255, 128);
+    border: none;
+    
+    }
+ 
+    .but3 {
+    border-radius:5px;
+    height: 40px;
+    width: 120px;
+    color: black;
+    background-color: rgb(255, 255, 128);
+    border: none;
+    
+    }
+ 
+    .but4{
+    border-radius:5px;
+    height: 50px;
+    width: 200px;
+   background-color: rgb(255, 255, 128);
+     border: none;
+     margin-right:20px;
+    
+    }
+    .but5{
+    border-radius:5px;
+     height: 50px;
+    width: 200px;
+    background-color: rgb(255, 255, 128);
+     border: none;
+     }
+    
+    .but6 {
+    border-radius:5px;
+    height: 40px;
+    width: 80px;
+    color: black;
+    background-color: rgb(255, 255, 128);
+    border: none;
+    }
+    
+    .but1:hover {
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    }
+ 
+    .but2:hover {
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    }
+    
+    .but3:hover {
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    }
+ 
+    .but4:hover {
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    }
+    
+   
+ 
+    .but5:hover {
+     background-color: black;
+    color: white;
+    border: 2px solid black;
+    }
+    
+    .but6:hover {
+     background-color: black;
+    color: white;
+    border: 2px solid black;
+    }
+    
+    p{
+    font-size: 0.8em;
+    }
+ 
+    .g{
+    font-size: 0.8em;
+    }
+ 
+    .c{
+    font-size: 0.8em;
+    }
+ 
+    .a{
+    font-size: 0.8em;
+    }
+    
+    .num{
+    color: red;
+    }
+ /***********  BOTTOM MENU *****************/
+#footerBox{
+	margin-top:15%;
+	background-color:black;
+	width:1300px;
+}
+#bottomMenuBox {
+	height:30px;
+	line-height:30px;
+	width:1200px;
+}
+
+#bottomMenuBox ul li {
+	display:inline-block;
+	text-align:center;
+	padding:5px;
+	margin-left:90px;
+}
+
+
+#bottomMenuBox ul li a{
+	color:white;
+	font-weight:bold;
+	text-decoration:none;
+	
+}
+
+#bottomimg {
+	padding:15px;
+	margin:20px;
+	margin-left:15%;
+}
+
+  

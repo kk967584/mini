@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace="com.spring_boot.movie.dao.IReviewDAO">
+
+	<select id="reviewList" resultType="com.spring_boot.movie.model.ReviewVO">
+		SELECT memId, reviewData, movieNo, reviewNo
+		FROM review
+	</select>
+
+	<insert id="upload" parameterType="com.spring_boot.movie.model.ReviewVO">
+		INSERT INTO review(memId, reviewData, movieNo)
+		VALUES (#{memId}, #{reviewData}, #{movieNo})
+	</insert>
+  
+  	<delete id="delete" parameterType="int">
+  		DELETE 
+  		FROM review
+  		WHERE reviewNo=#{reviewNo} 
+  	</delete>
+  	
+  	<update id="update" parameterType="string">
+  		UPDATE review
+  		SET reviewData=#{reviewData}
+  		WHERE reviewNo=#{reviewNo}
+  	
+  	</update>
+  
+  </mapper>

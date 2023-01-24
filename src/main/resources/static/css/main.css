@@ -1,0 +1,315 @@
+@charset "UTF-8";
+
+ul{list-style : none;}
+
+* { margin: 0 auto; }
+
+#wrap {
+	width:1300px;
+	background-color:black; 
+	text-align:left;
+	position:relative;
+}
+
+#titleimg {
+	height:112px;
+	padding-left:40%;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  max-width: 0;
+  transition: 0.5s ease;
+  z-index: 1;
+  background-color: #eee;
+}
+
+.burger-icon {
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  z-index: 2;
+  padding: 8px 0;
+  top: 44px;
+  right: 10px;
+  user-select: none;
+  width: auto;
+  margin-right: 20px;
+}
+
+.loginBtn {
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  
+  padding: 8px 0;
+  top: 30px;
+  right: 80px;
+  user-select: none;
+  width: auto;
+}
+
+.mainlogin {
+	width: 90px;
+	height: 35px;
+    color: black;
+    background-color: white;
+    border-color: black;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.burger-icon .burger-sticks {
+  background:#fff;
+  display: block;
+  height: 5px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 30px;
+  z-index: 1;
+}
+
+.burger-icon .burger-sticks:before,
+.burger-icon .burger-sticks:after {
+  background: #fff;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.burger-icon .burger-sticks:before {
+  top: 10px;
+}
+
+.burger-icon .burger-sticks:after {
+  top: -10px;
+}
+
+.burger-check {
+  display: none;
+}
+
+.burger-check:checked~.menu {
+  max-width: 200px;
+}
+
+.burger-check:checked~.burger-icon .burger-sticks {
+  background: transparent;
+}
+
+.burger-check:checked~.burger-icon .burger-sticks:before {
+  transform: rotate(-45deg);
+}
+
+.burger-check:checked~.burger-icon .burger-sticks:after {
+  transform: rotate(45deg);
+}
+
+.burger-check:checked~.burger-icon:not(.steps) .burger-sticks:before,
+.burger-check:checked~.burger-icon:not(.steps) .burger-sticks:after {
+  top: 0;
+}
+
+/************* MenuBox *************/
+
+#mainMenuBox {
+	width:1300px;
+	height:35px;
+	line-height:35px; 
+	background-color:#ffffff;
+	z-index:20;
+	border-top:solid #cccccc 1px;
+	border-bottom:solid #cccccc 1px;	
+}
+
+#mainMenuBox ul {
+	margin:0;
+}
+
+#mainMenuBox ul li{
+	float:left; 
+	text-align:center;
+	width:16%;  
+	height:30px;
+	line-height:30px;
+}
+
+#mainMenuBox ul li a{
+	text-decoration:none;
+	color:black;
+	font-size:15px;
+	font-weight:bold;
+}
+
+#mainMenuBox ul li a:hover{	
+	color:red;	
+}
+
+/************** 슬라이드 쇼 *************/
+
+#slideShow {
+	position:relative;
+	background-color:#fff;
+	height:600px;
+	line-height:520px;
+	padding:40px;
+	padding-bottom:20px;
+	border-bottom:solid #ccc 1px;
+}
+
+#slideShowBox {
+	width:400px;
+	height:530px;
+	text-align:center;
+	padding-bottom:20px;
+	overflow:hidden;  /* 영역 벗어나면 숨김 */
+}
+
+#slidePanel {
+	position:relative;
+	width:6000px;
+	height:480px;
+}
+
+.slideImage {
+	float:left;
+	width:400px;
+	height:530px;
+}
+
+/* prev / next 버튼 */
+#prevNextButtonBox { position:relative; z-index:10;}
+#prevButton {
+	position:absolute;
+	top:210px;
+	left:4%;
+	opacity:1;
+	cursor:pointer;
+}
+#nextButton {
+	position:absolute;
+	top:210px;
+	right:4%;
+	opacity:1;
+	cursor:pointer;
+}
+
+/* 컨트롤 버튼 */
+#controlButtonBox { margin:0 auto; width:160px;}
+#controlButtonBox img {float:left; margin:10px;}
+
+
+/***********  BOTTOM MENU *****************/
+
+#bottomMenuBox {
+	height:30px;
+	line-height:30px;
+}
+
+#bottomMenuBox ul li {
+	display:inline-block;
+	text-align:center;
+	padding:5px;
+	margin-left:90px;
+}
+
+
+#bottomMenuBox ul li a{
+	color:white;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+#bottomimg {
+	padding:15px;
+	margin:20px;
+	margin-left:100px;
+}
+
+/*************** 추천영화 *****************/
+
+#추천영화박스 {
+	width:1280px;
+	height:480px;
+	line-height:500px;
+	margin-top:50px;
+}
+
+#추천영화박스제목 {
+	text-align: center;
+	font-size:20px;
+	width: 1280px;
+	height: 50px;
+	line-height: 50px;
+	padding-top:30px;
+}
+
+#추천영화예고편 {
+	width: 1280px;
+	height: 360px;
+	line-height: 360px;
+	padding:5px;
+}
+
+video {
+	display:inline-block;
+}
+
+#event {
+	padding:20px;
+	padding-top:0 auto;
+	font-size:30px;
+	font-style:bold;
+		overflow:hidden;
+}
+
+#event123 {
+	position:relative;
+	margin-top:50px;
+	width:3110px;
+	height:300px;
+
+}
+
+.eventshow {
+	float:left;
+	width:400px;
+	height:200px;
+	padding-right:30px;
+}
+
+/**************** event prev/next ***************/
+
+#eventprevnext { position:relative; z-index:10;}
+#prevButton2 {
+	position:absolute;
+	top:120px;
+	left:1px;
+	opacity:0.3;
+	cursor:pointer;
+}
+#nextButton2 {
+	position:absolute;
+	top:120px;
+	right:1px;
+	opacity:0.3;
+	cursor:pointer;
+}
+
+#prevButton2:hover { opacity:1;}
+#nextButton2:hover { opacity:1;}
+
+#header{
+	 visibility: hidden;
+}
+
+#header ul li{
+	margin-top:35px;
+	margin-bottom:20px;
+}

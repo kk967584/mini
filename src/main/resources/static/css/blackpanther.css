@@ -1,0 +1,179 @@
+@charset "UTF-8";
+/*********** TOP MENU ***********************/
+li{list-style:none;}
+#wrap {
+	width:1500px;
+	background-color:#181818; 
+	text-align:left;
+	position:relative;
+}
+#titleimg {
+	height:112px;
+	width:1300px;
+	background-color:black;
+}
+#titleimg img{
+	margin-left:40%;
+}
+#mainMenuBox {
+	width:1300px;
+	height:35px;
+	line-height:35px; 
+	background-color:#ffffff;
+	z-index:20;
+	border-top:solid #cccccc 1px;
+	border-bottom:solid #cccccc 1px;	
+}
+
+#mainMenuBox ul {
+	margin:0;
+}
+
+#mainMenuBox ul li{
+	float:left; 
+	text-align:center;
+	width:16%;  
+	height:30px;
+	line-height:30px;
+}
+
+#mainMenuBox ul li a{
+	text-decoration:none;
+	color:black;
+	font-size:15px;
+	font-weight:bold;
+}
+
+#mainMenuBox ul li a:hover{	
+	color:red;	
+}
+/********** Container ******************/
+#wrap-movie-all{
+	width:1300px;
+}
+#wrap-content{
+	margin-top:30px;
+	margin-left:50px;
+}
+.stillcuthead{
+	background-color:#e3dfde;
+	margin-bottom:25px;
+}
+.etchead{
+		background-color:#e3dfde;
+}
+.sect-movie-story{
+	line-height:25px;
+	font-family: 'Noto Sans KR', 'CJONLYONENEW', '맑은 고딕', '돋움', Dotum, sans-serif;
+}
+
+/****************** 			Slide Show  		*********************/
+/* #slideShow{
+	margin-top:100px;
+	margin-bottom:50px;
+	height:400px;
+}
+#slideShowBox {
+
+	width:410px;
+	height:400px;
+	text-align:center;
+	overflow:hidden;  영역 벗어나면 숨김
+}
+
+#slidePanel {
+	position:relative;
+	width:5740px;
+	height:400px;
+}
+
+.slideImage {
+	float:left;
+	width:410px;
+	height:400px;
+} */
+
+ #slideShow{
+ width:1250px;
+	margin-top:100px;
+	margin-bottom:50px;
+	height:400px;
+}
+#slideShowBox {
+
+    position:relative;
+    width: 1240px;
+    margin: 0 auto;
+    height: 400px;
+    overflow: hidden;
+}
+
+#slidePanel {
+	position:relative;
+	width:5740px;
+	height:400px;
+}
+
+.slideImage {
+	float:left;
+	width:400px;
+	height:400px;
+	margin-right:20px;
+}
+
+#controlButtonBox { margin:0 auto; margin-top:20px; width:160px;}
+#controlButtonBox img {float:left; margin:10px;}
+#prevNextButtonBox { position:relative; z-index:10; top:150px;}
+
+#prevButton{
+	position:absolute;
+	left:3%;
+	opacity:0.3;
+	cursor:pointer;
+}
+#nextButton {
+	position:absolute;
+	right:3%;
+	opacity:0.3;
+	cursor:pointer;
+}
+/***********  BOTTOM MENU *****************/
+
+#bottomMenuBox {
+	height:30px;
+	line-height:30px;
+}
+
+#bottomMenuBox ul li {
+	display:inline-block;
+	text-align:center;
+	padding:5px;
+	margin-left:90px;
+}
+
+
+#bottomMenuBox ul li a{
+	color:white;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+#bottomimg {
+	padding:15px;
+	margin:20px;
+	margin-left:140px;
+}
+
+#footerBox {
+	padding:5px;
+	padding-top:8px;
+	background-color:black;
+}
+
+.box-image{
+	height:350px;
+	
+}
+.box-image img{
+	height:350px;
+}

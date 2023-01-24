@@ -1,0 +1,461 @@
+@charset "UTF-8";
+
+* {
+	margin:0 auto; 
+	text-align:center;
+	font-size:22px;
+}
+
+hr {
+	color:black;
+}
+
+ul {
+	margin-top:0;
+	padding:0;
+	list-style:none;
+}
+
+a{
+	text-decoration:none;
+}
+
+input[type="radio"] {
+	display:none;
+}
+
+input[type="checkbox"] {
+	display:none;
+}
+
+input[type="radio"]:checked + label {
+	color:red;
+	font-style:bold;
+}
+
+input[name="결제수단"] {
+	display:radio;
+}
+
+input[type="checkbox"]:checked + label {
+	color:red;
+}
+
+input[type="date"] {
+	color: black;
+	width: 200px;
+	height: 40px;
+	font-size: 18px;
+}
+
+select {
+	color: black;
+}
+
+option {
+	color: black;
+}
+
+header {
+	height:100px;
+	line-height:100px;
+	background:black;
+}
+
+header h3 {
+	color:white;
+}
+
+button {
+	background-color:yellow;
+	color:black;
+	width: 100px;
+	height: 50px;
+	line-height: 50px;
+	font-size:16px;
+	margin-top:30px;
+	
+}
+
+.theaterChoiceBtn:hover {
+	cursor:pointer;
+}
+
+#warp {
+	width:1280px;
+	height:920px;
+	text-align:left;
+	position:relative;
+}
+
+#choiceTheaterSection {
+	position:relative;
+	height:700px;
+	/* line-height:700px; */
+	background: rgb(242, 240, 229);
+}
+
+#choiceTheaterSection h3 {
+	width:1280px;
+	height:50px;
+	line-height:50px;
+}
+
+
+#theaterChoiceBox {
+	width:200px;
+	height:650px;
+	line-height:40px;
+	float:left;
+	border-bottom:solid black 1px;
+	background:black;
+}
+
+#theaterChoiceBox ul li{
+	color:white;
+}
+
+#theaterChoiceBox ul li a{
+	color:black;
+}
+
+#subTheaterBox {
+	/* margin-top:50px; */
+	/* visibility:hidden; */
+	float:left;
+	width:200px;
+	height:600px;
+}
+
+.subTheater {
+	position: absolute;
+	visibility:hidden;
+	width:200px;
+	height:650px;
+	/* float:left; */
+	z-index:10;
+	background-color: #c0c0c0;
+}
+
+.subTheater ul li{
+	height:40px;
+	line-height:40px;
+}
+
+.subTheater ul li label:hover {
+	color:yellow;
+	opacity:0.7;
+	cursor:pointer;
+}
+
+.theaterChoiceBtn {
+	width: 200px;
+    height: 40px;
+    background: black;
+    font-size: 22px;
+    color: white;
+    border : 0;
+}
+
+
+#영화관다음 {
+	width: 90px;
+	height: 50px;
+    color: white;
+    background-color: black;
+    border-color: black;
+    border-radius: 10px;
+    text-align:center;
+}
+
+#영화관다음:hover {
+	 background-color: #b9b9b9;
+    color: black;
+    border: 2px solid black;
+}
+
+/******************** 날짜 선택 박스 **********************/
+
+#dateChoice {
+	position:absolute;
+	display:none;
+	width:1280px;
+	height:700px;
+	background: rgb(242, 240, 229);
+}
+
+#dateChoice h3 {
+	height: 50px;
+	line-height: 50px;
+	border-bottom:solid black 1px;
+}
+
+#날짜선택 {
+	margin-top:40px;
+}
+
+#theaterButton {
+	width: 90px;
+	height: 50px;
+    color: white;
+    background-color: black;
+    border-color: black;
+    border-radius: 10px;
+}
+
+#theaterButton:hover {
+	 background-color: #b9b9b9;
+    color: black;
+    border: 2px solid black;
+}
+
+#backTheaterButton {
+	width: 90px;
+	height: 50px;
+    color: white;
+    background-color: black;
+    border-color: black;
+    border-radius: 10px;
+}
+
+#backTheaterButton:hover {
+	 background-color: #b9b9b9;
+    color: black;
+    border: 2px solid black;
+}
+
+#상영관 {
+	display:none;
+	width:1280px;
+	height:50px;
+	line-height:50px;
+	margin-top:15px;
+	margin-bottom:15px;
+	background:black;
+}
+
+#영화제목 {
+	color:white;
+}
+
+#상영시간선택박스 {
+	display:none;
+	width:1280px;
+	height:50px;
+	line-height:50px;
+}
+
+#영화관다음박스 {
+	position: absolute;
+	top:270px;
+	left:46.5%;
+	display:none;
+}
+
+#상영관 ul li{
+	float:left;
+	text-align:center;
+	width:33%;
+	height:30px;
+	line-height:30px;
+	border:solid black 1px;
+}
+
+#날짜버튼 {
+	display:none;
+	margin-top:200px;
+}
+
+#날짜다음 {
+	width: 90px;
+	height: 50px;
+    color: white;
+    background-color: black;
+    border-color: black;
+    border-radius: 10px;
+    text-align:center;
+}
+
+#날짜다음:hover {
+	 background-color: #b9b9b9;
+    color: black;
+    border: 2px solid black;
+}
+
+#screen {
+	margin-top:30px;
+	border-top:solid black 1px;
+}
+
+#screen table {
+	width: 1280px;
+	table-layout: fixed;
+}
+
+#peopleScreen {
+	position:absolute;
+	display:none;
+	width:1280px;
+	height: 700px;
+	background: rgb(242, 240, 229);
+}
+
+.screenH3 {
+	width:1280px;
+	height:50px;
+	line-height:50px;
+	border-top:solid black 1px;
+	border-bottom:solid black 1px;
+}
+
+#screenH3 {
+	width:1280px;
+	height:50px;
+	line-height:50px;
+}
+
+.인원선택클래스 {
+	width:630px;
+	height:50px;
+	line-height:50px;
+	display:inline-block;
+	margin-top:20px;
+}
+
+#charge {
+	margin-top: 30px;
+}
+
+#인원좌석이전{
+	width: 90px;
+	height: 50px;
+    color: white;
+    background-color: black;
+    border-color: black;
+    border-radius: 10px;
+    text-align:center;
+}
+
+#인원좌석이전:hover {
+	 background-color: #b9b9b9;
+    color: black;
+    border: 2px solid black;
+}
+
+#인원좌석다음{
+	width: 90px;
+	height: 50px;
+    color: white;
+    background-color: black;
+    border-color: black;
+    border-radius: 10px;
+    text-align:center;
+}
+
+#인원좌석다음:hover {
+	 background-color: #b9b9b9;
+    color: black;
+    border: 2px solid black;
+}
+
+#check {
+	position:absolute;
+	display:none;
+	width:1280px;
+	height:700px;
+	background: rgb(242, 240, 229);
+}
+
+#check h3 {
+	width:1280px;
+	height:50px;
+	line-height:50px;
+	border-bottom:solid black 1px;
+}
+
+#checkList {
+	margin-top:30px;
+	width:600px;
+	height:300px;
+}
+
+#결제확인이전{
+	width: 90px;
+	height: 50px;
+    color: white;
+    background-color: black;
+    border-color: black;
+    border-radius: 10px;
+    text-align:center;
+}
+
+#결제확인이전:hover {
+	 background-color: #b9b9b9;
+    color: black;
+    border: 2px solid black;
+}
+
+#결제확인다음{
+	width: 90px;
+	height: 50px;
+    color: white;
+    background-color: black;
+    border-color: black;
+    border-radius: 10px;
+    text-align:center;
+}
+
+#결제확인다음:hover {
+	 background-color: #b9b9b9;
+    color: black;
+    border: 2px solid black;
+}
+
+#chargeBox {
+	position:absolute;
+	display:none;
+	width:1280px;
+	height:700px;
+	background: rgb(242, 240, 229);
+}
+
+#chargeBox h3 {
+	width:1280px;
+	height:50px;
+	line-height:50px;
+}
+
+#chargeBox h4 {
+	width:1280px;
+	height:50px;
+	line-height:50px;
+}
+#결제개인정보 {
+	margin-bottom:30px;
+}
+
+#결제버튼{
+	width: 90px;
+	height: 50px;
+    color: white;
+    background-color: black;
+    border-color: black;
+    border-radius: 10px;
+    text-align:center;
+}
+
+#결제버튼:hover {
+	 background-color: #b9b9b9;
+    color: black;
+    border: 2px solid black;
+}
+
+#예매마지막 {
+	position:absolute;
+	display:none;
+	width:1280px;
+	height: 700px;
+	line-height: 460px;
+	background: rgb(242, 240, 229);
+}
+

@@ -1,0 +1,48 @@
+@charset "UTF-8";
+/*
+ 공통 박스 info_common.css 
+*/		
+	/* 중앙정렬 */
+	
+	*  {
+		margin : 0 auto;
+		font-family: 'Sunflower', sans-serif;
+		}			
+	#movieinfo_wrap{
+	width:1300px;
+	}
+			
+
+		#wrap-movie-all{
+		position:relative;
+
+		height:100%;
+		min-width:600px;
+
+		}
+		#wrap-content
+		{
+			width:100%;
+			height:100%;			
+		}
+/* 		#tit-moviechart{
+
+		width:1100px;
+		height:60px;
+		padding-top:30px; 							상단에 메뉴바 들어오면 무비차트와 공백나눔
+		padding-left:30px;
+		border-bottom: 3px solid #030303;
+		} */
+		#container{
+		/* padding-top:50px; */
+		width:1130px;
+		height:85%;
+	
+		}
+		#tit-moviechart h2{
+		display:inline-block;
+		margin:0;
+
+		}
+		
+		

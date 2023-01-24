@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+* { margin: 0 auto; }
+
+/* 모든 콘텐츠를 포함 warp box */
+
+#wrap {
+	width:1280px;
+	background-color:white; 
+	text-align:center;
+	position:relative;
+}
+
+.title:hover {
+    color: red;
+    border: 2px solid black;
+ }
+ #footerBox{
+	margin-top:15%;
+	background-color:black;
+	width:1300px;
+}
+ #bottomMenuBox {
+	height:30px;
+	line-height:30px;
+}
+
+#bottomMenuBox ul li {
+	display:inline-block;
+	text-align:center;
+	padding:5px;
+	margin-left:90px;
+}
+
+
+#bottomMenuBox ul li a{
+	color:white;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+#bottomimg {
+	padding:15px;
+	margin:20px;
+	margin-left:100px;
+}

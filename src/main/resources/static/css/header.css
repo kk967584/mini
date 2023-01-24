@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+.menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  max-width: 0;
+  transition: 0.5s ease;
+  z-index: 1;
+  background-color: #eee;
+}
+
+.burger-icon {
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  z-index: 2;
+  top: 30px;
+  right: 15%;
+  user-select: none;
+  width: auto;
+  margin: 0;
+  background-color:black;
+}
+.loginBtn {
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  
+  padding: 8px 0;
+  top: 4px;
+  right: 40px;
+  user-select: none;
+  width: auto;
+  margin: 0;
+}
+
+#burger-icon .burger-sticks {
+  background:white;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+  z-index: 1;
+}
+
+.burger-icon .burger-sticks:before,
+.burger-icon .burger-sticks:after {
+  background:white;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.burger-icon .burger-sticks:before {
+  top: 5px;
+}
+
+.burger-icon .burger-sticks:after {
+  top: -5px;
+}
+
+.burger-check {
+  display: none;
+}
+
+.burger-check:checked~.menu {
+  max-width: 200px;
+}
+
+.burger-check:checked~.burger-icon .burger-sticks {
+  background: transparent;
+}
+
+.burger-check:checked~.burger-icon .burger-sticks:before {
+  transform: rotate(-45deg);
+}
+
+.burger-check:checked~.burger-icon .burger-sticks:after {
+  transform: rotate(45deg);
+}
+
+.burger-check:checked~.burger-icon:not(.steps) .burger-sticks:before,
+.burger-check:checked~.burger-icon:not(.steps) .burger-sticks:after {
+  top: 0;
+}
+
+/************* MenuBox *************/
+
+#mainMenuBox {
+	width:1280px;
+	height:35px;
+	line-height:35px; 
+	background-color:#ffffff;
+	z-index:20;
+	border-top:solid #cccccc 1px;
+	border-bottom:solid #cccccc 1px;	
+}
+
+#mainMenuBox ul {
+	margin:0;
+}
+
+#mainMenuBox ul li{
+	float:left; 
+	text-align:center;
+	width:16%;  
+	height:30px;
+	line-height:30px;
+}
+
+#mainMenuBox ul li a{
+	text-decoration:none;
+	color:black;
+	font-size:14px;
+	font-weight:bold;
+}
+
+#mainMenuBox ul li a:hover{	
+	color:red;	
+}
+
+button {
+	width:100px;
+	height: 50px;
+	background: gray;
+	color: white;
+}
+
+#headerMenu {
+	width: 1280px;
+	height: 112px;
+	background: black;
+}

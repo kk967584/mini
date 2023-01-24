@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="com.spring_boot.movie.dao.IReservationDAO">
+  <resultMap id="resResult" type="com.spring_boot.movie.model.SchedulesVO" >
+	<result property="scNo"  column="scNo"  />
+	<result property="scDate"  column="scDate"  />
+	<result property="movieNo"  column="movieNo"  />
+	<result property="theaterNo"  column="theaterNo"  />
+	<result property="theaterLocation"  column="theaterLocation"  />
+	<result property="theaterName"  column="theaterName"  />
+	<result property="movieTitle"  column="movieTitle"  />
+  </resultMap>
+
+	<!-- 초기값 세팅 -->
+  <select id="selectTheaterLocation" parameterType="string"
+								   resultMap="resResult">
+	SELECT DISTINCT th.theaterLocation, MIN(th.theaterNo), mv.movieNo
+ 	FROM movieinfo mv, schedules sch LEFT OUTER JOIN theater th ON(sch.theaterNo = th.theaterNo)
+ 	WHERE (mv.movieNo = #{mv.movieNo}) AND (mv.movieNo = sch.movieNo)
+ 	GROUP BY th.theaterLocation
+ 	ORDER BY MIN(th.theaterNo)
+  </select>
+  
+  <!-- 초기값 세팅2 -->
+  <select id="selectTheater" parameterType="string"
+								   resultMap="resResult">
+	SELECT DISTINCT th.theaterName, th.theaterLocation
+ 	FROM movieinfo mv, schedules sch LEFT OUTER JOIN theater th ON(sch.theaterNo = th.theaterNo)
+    WHERE (mv.movieNo = #{mv.movieNo}) AND (mv.movieNo = sch.movieNo)
+  </select>
+  
+  <!-- 초기값 세팅3 -->
+  <select id="titleSetter" parameterType="string" resultType="string">
+  	SELECT movieTitle
+  	FROM movieinfo
+  	WHERE (movieNo=#{movieNo})
+  </select>
+  
+  <!-- 결과값 넘기기 -->
+  <insert id="insertRes" parameterType="com.spring_boot.movie.model.ReservationVO">
+  	INSERT INTO reservation(memId, movieTitle, theaterName, screenName, peopleAll, peopleAdult, peopleChild, price, scDate, scTime, seat)
+  	VALUES (#{memId}, #{movieTitle}, #{theaterName}, #{screenName}, #{peopleAll}, #{peopleAdult}, #{peopleChild}, #{price}, #{scDate}, #{scTime}, #{seat})
+  </insert>
+  
+  <select id="checkRes" parameterType="string" resultType="com.spring_boot.movie.model.ReservationVO">
+  	SELECT * 
+  	FROM reservation
+  	WHERE memId = #{memId}
+  	
+  </select>
+  
+  <select id="dateCheck" parameterType="com.spring_boot.movie.model.SchedulesVO" resultType="com.spring_boot.movie.model.ScreenVO">
+	SELECT distinct screenName
+ 	FROM screen sc LEFT OUTER JOIN theater th ON(sc.theaterNo = th.theaterNo)
+    WHERE sc.scDate = #{scDate} AND th.theaterName = #{theaterName}
+  </select>
+  
+  
+  <!-- 실패한 ajax -->
+  <select id="locationChecker" parameterType="hashmap" resultMap="resResult">
+  	SELECT DISTINCT theaterName
+  	FROM movieinfo mv, schedules sch LEFT OUTER JOIN theater th ON(sch.theaterNo = th.theaterNo)
+  	WHERE (mv.movieNo = #{mvtitle}) AND (mv.movieNo = sch.movieNo) AND (th.theaterLocation = #{thLocation})
+  </select>
+  
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
